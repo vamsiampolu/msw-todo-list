@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "composite": true,
+    "emitDeclarationOnly": true,
+    "moduleResolution": "Node16",
+    "types": ["vite/client", "vite-plugin-svgr/client", "vitest"],
+    "outDir": "./cache/"
+  },
+  "include": ["vite.config.ts", "eslint.config.js"]
+}

@@ -1,0 +1,14 @@
+node_modules
+coverage
+dist
+.DS_Store
+logs
+*.log
+.pnpm-debug.log*
+*.tsbuildinfo
+.npmrc
+
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+

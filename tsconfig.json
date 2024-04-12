@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "outDir": "./cache/",
+    "types": ["vite/client", "vite-plugin-svgr/client", "vitest/globals"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "**/*.json",
+    "**/*.d.ts",
+    "styled-system/**/*"
+  ],
+  "exclude": ["dist/**/*", "vite.config.ts", "eslint.config.js"],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
